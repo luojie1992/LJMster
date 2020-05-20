@@ -100,7 +100,7 @@ static const char *__BlockSignature__(id blockObj)
                   || strcmp(argType, @encode(short)) == 0 || strcmp(argType, @encode(unsigned short)) == 0) {
             ARG_GET_SET(int);
         }else{                  //struct union and array
-            assert(false && "struct union array unsupported!")
+            assert(false && "struct union array unsupported!") ;
         }
     }
     va_end(args);

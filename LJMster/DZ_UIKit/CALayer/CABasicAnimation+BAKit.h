@@ -1,37 +1,37 @@
 //
-//  CABasicAnimation+BAKit.h
-//  BAKit
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/7/12.
-//  Copyright © 2017年 boai. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
+
+static NSString *kDZKit_animationKeyPath_TransformScale     = @"transform.scale";
+static NSString *kDZKit_animationKeyPath_TransformScaleX    = @"transform.scale.x";
+static NSString *kDZKit_animationKeyPath_TransformScaleY    = @"transform.scale.y";
+
+static NSString *kDZKit_animationKeyPath_TransformRotation  = @"transform.rotation";
+static NSString *kDZKit_animationKeyPath_TransformRotationX = @"transform.rotation.x";
+static NSString *kDZKit_animationKeyPath_TransformRotationY = @"transform.rotation.y";
+static NSString *kDZKit_animationKeyPath_TransformRotationZ = @"transform.rotation.z";
+
+static NSString *kDZKit_animationKeyPath_TransformTranslationX  = @"transform.translation.x";
+static NSString *kDZKit_animationKeyPath_TransformTranslationY  = @"transform.translation.y";
+
+static NSString *kDZKit_animationKeyPath_Position           = @"position";
+static NSString *kDZKit_animationKeyPath_PositionX          = @"position.x";
+static NSString *kDZKit_animationKeyPath_PositionY          = @"position.y";
+
+static NSString *kDZKit_animationKeyPath_Opacity            = @"opacity";
+static NSString *kDZKit_animationKeyPath_Bounds             = @"bounds";
+static NSString *kDZKit_animationKeyPath_BGColor            = @"backgroundColor";
+static NSString *kDZKit_animationKeyPath_CornerRadius       = @"cornerRadius";
 
 
-static NSString *kBAKit_animationKeyPath_TransformScale     = @"transform.scale";
-static NSString *kBAKit_animationKeyPath_TransformScaleX    = @"transform.scale.x";
-static NSString *kBAKit_animationKeyPath_TransformScaleY    = @"transform.scale.y";
-
-static NSString *kBAKit_animationKeyPath_TransformRotation  = @"transform.rotation";
-static NSString *kBAKit_animationKeyPath_TransformRotationX = @"transform.rotation.x";
-static NSString *kBAKit_animationKeyPath_TransformRotationY = @"transform.rotation.y";
-static NSString *kBAKit_animationKeyPath_TransformRotationZ = @"transform.rotation.z";
-
-static NSString *kBAKit_animationKeyPath_TransformTranslationX  = @"transform.translation.x";
-static NSString *kBAKit_animationKeyPath_TransformTranslationY  = @"transform.translation.y";
-
-static NSString *kBAKit_animationKeyPath_Position           = @"position";
-static NSString *kBAKit_animationKeyPath_PositionX          = @"position.x";
-static NSString *kBAKit_animationKeyPath_PositionY          = @"position.y";
-
-static NSString *kBAKit_animationKeyPath_Opacity            = @"opacity";
-static NSString *kBAKit_animationKeyPath_Bounds             = @"bounds";
-static NSString *kBAKit_animationKeyPath_BGColor            = @"backgroundColor";
-static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
-
-
-@interface CABasicAnimation (BAKit)
+@interface CABasicAnimation (DZKit)
 
 /**
  创建一个动画：无限闪烁
@@ -39,7 +39,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param duration 持续时间
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_opacityFlashingWithDuration:(CFTimeInterval)duration;
++ (CABasicAnimation *)DZ_basicAnimation_opacityFlashingWithDuration:(CFTimeInterval)duration;
 
 /**
  创建一个动画：有次数闪烁
@@ -48,7 +48,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param repeatCount 重复次数
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_opacityFlashingWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_opacityFlashingWithDuration:(CFTimeInterval)duration
                                                         repeatCount:(CGFloat)repeatCount;
 
 /**
@@ -62,7 +62,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_opacityWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_opacityWithDuration:(CFTimeInterval)duration
                                                 repeatCount:(float)repeatCount
                                                   beginTime:(CFTimeInterval)beginTime
                                            fromValueOpacity:(CGFloat)fromValueOpacity
@@ -80,7 +80,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_scaleWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_scaleWithDuration:(CFTimeInterval)duration
                                               repeatCount:(float)repeatCount
                                                 beginTime:(CFTimeInterval)beginTime
                                            fromValueScale:(CGFloat)fromValueScale
@@ -98,7 +98,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_scaleXWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_scaleXWithDuration:(CFTimeInterval)duration
                                                repeatCount:(float)repeatCount
                                                  beginTime:(CFTimeInterval)beginTime
                                             fromValueScale:(CGFloat)fromValueScale
@@ -116,7 +116,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_scaleYWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_scaleYWithDuration:(CFTimeInterval)duration
                                                repeatCount:(float)repeatCount
                                                  beginTime:(CFTimeInterval)beginTime
                                             fromValueScale:(CGFloat)fromValueScale
@@ -134,7 +134,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_cornerRadiusWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_cornerRadiusWithDuration:(CFTimeInterval)duration
                                                      repeatCount:(float)repeatCount
                                                        beginTime:(CFTimeInterval)beginTime
                                            fromValueCornerRadius:(CGFloat)fromValueCornerRadius
@@ -150,7 +150,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param toValuebackgroundColor 结束的 backgroundColor
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_backgroundColorWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_backgroundColorWithDuration:(CFTimeInterval)duration
                                                         repeatCount:(float)repeatCount
                                                           beginTime:(CFTimeInterval)beginTime
                                            fromValuebackgroundColor:(UIColor *)fromValuebackgroundColor
@@ -167,7 +167,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_moveXWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_moveXWithDuration:(CFTimeInterval)duration
                                                 beginTime:(CFTimeInterval)beginTime
                                                fromValueX:(CGFloat)fromValueX
                                                  toValueX:(CGFloat)toValueX
@@ -183,7 +183,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_moveYWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_moveYWithDuration:(CFTimeInterval)duration
                                                 beginTime:(CFTimeInterval)beginTime
                                                fromValueY:(CGFloat)fromValueY
                                                  toValueY:(CGFloat)toValueY
@@ -199,7 +199,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_rotationWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_rotationWithDuration:(CFTimeInterval)duration
                                                    beginTime:(CFTimeInterval)beginTime
                                                 toValueAngle:(CGFloat)toValueAngle
                                                  repeatCount:(CGFloat)repeatCount
@@ -215,7 +215,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_rotationXWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_rotationXWithDuration:(CFTimeInterval)duration
                                                     beginTime:(CFTimeInterval)beginTime
                                                  toValueAngle:(CGFloat)toValueAngle
                                                   repeatCount:(CGFloat)repeatCount
@@ -231,7 +231,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_rotationYWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_rotationYWithDuration:(CFTimeInterval)duration
                                                     beginTime:(CFTimeInterval)beginTime
                                                  toValueAngle:(CGFloat)toValueAngle
                                                   repeatCount:(CGFloat)repeatCount
@@ -247,7 +247,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_rotationZWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_rotationZWithDuration:(CFTimeInterval)duration
                                                     beginTime:(CFTimeInterval)beginTime
                                                  toValueAngle:(CGFloat)toValueAngle
                                                   repeatCount:(CGFloat)repeatCount
@@ -264,7 +264,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses autoreverses description
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_positionWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_positionWithDuration:(CFTimeInterval)duration
                                                    beginTime:(CFTimeInterval)beginTime
                                            fromValuePosition:(CGPoint)fromValuePosition
                                              toValuePosition:(CGPoint)toValuePosition
@@ -282,7 +282,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses autoreverses description
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_positionXWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_positionXWithDuration:(CFTimeInterval)duration
                                                     beginTime:(CFTimeInterval)beginTime
                                            fromValuePositionX:(CGFloat)fromValuePositionX
                                              toValuePositionX:(CGFloat)toValuePositionX
@@ -300,7 +300,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses autoreverses description
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_basicAnimation_positionYWithDuration:(CFTimeInterval)duration
++ (CABasicAnimation *)DZ_basicAnimation_positionYWithDuration:(CFTimeInterval)duration
                                                     beginTime:(CFTimeInterval)beginTime
                                            fromValuePositionY:(CGFloat)fromValuePositionY
                                              toValuePositionY:(CGFloat)toValuePositionY
@@ -319,7 +319,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_baseAnimationWithKeyPath:(NSString *)keyPath
++ (CABasicAnimation *)DZ_baseAnimationWithKeyPath:(NSString *)keyPath
                                         beginTime:(CFTimeInterval)beginTime
                                           toValue:(NSValue *)toValue
                                          duration:(NSTimeInterval)duration
@@ -337,7 +337,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param duration duration description
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_baseAnimationWithKeyPath:(NSString *)keyPath
++ (CABasicAnimation *)DZ_baseAnimationWithKeyPath:(NSString *)keyPath
                                         beginTime:(CFTimeInterval)beginTime
                                         fromValue:(id)fromValue
                                           toValue:(id)toValue
@@ -356,7 +356,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param duration duration description
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_baseAnimationForwardsWithKeyPath:(NSString *)keyPath
++ (CABasicAnimation *)DZ_baseAnimationForwardsWithKeyPath:(NSString *)keyPath
                                                 beginTime:(CFTimeInterval)beginTime
                                                 fromValue:(id)fromValue
                                                   toValue:(id)toValue
@@ -374,7 +374,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CABasicAnimation
  */
-+ (CABasicAnimation *)ba_baseAnimatioWithKeyPath:(NSString *)keyPath
++ (CABasicAnimation *)DZ_baseAnimatioWithKeyPath:(NSString *)keyPath
                                        beginTime:(CFTimeInterval)beginTime
                                        fromValue:(NSValue *)fromValue
                                          toValue:(NSValue *)toValue
@@ -392,7 +392,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param removedOnCompletion removedOnCompletion description
  @return CAAnimationGroup
  */
-+ (CAAnimationGroup *)ba_animationGroupAnimations:(NSArray *)animations
++ (CAAnimationGroup *)DZ_animationGroupAnimations:(NSArray *)animations
                                          duration:(float)duration
                                       repeatCount:(float)repeatCount
                               removedOnCompletion:(BOOL)removedOnCompletion;
@@ -408,7 +408,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param path path description
  @return CAKeyframeAnimation
  */
-+ (CAKeyframeAnimation *)ba_keyframeAnimationWithBeginTime:(CFTimeInterval)beginTime
++ (CAKeyframeAnimation *)DZ_keyframeAnimationWithBeginTime:(CFTimeInterval)beginTime
                                                   duration:(NSTimeInterval)duration
                                                repeatCount:(float)repeatCount
                                               autoreverses:(BOOL)autoreverses
@@ -427,7 +427,7 @@ static NSString *kBAKit_animationKeyPath_CornerRadius       = @"cornerRadius";
  @param autoreverses 是否自动重复
  @return CAKeyframeAnimation
  */
-+ (CAKeyframeAnimation *)ba_keyFrameAnimationForwardsWithKeyPath:(NSString *)keyPath
++ (CAKeyframeAnimation *)DZ_keyFrameAnimationForwardsWithKeyPath:(NSString *)keyPath
                                                        beginTime:(CFTimeInterval)beginTime
                                                         duration:(NSTimeInterval)duration
                                                            times:(NSArray<NSNumber *> *)times

@@ -1,14 +1,14 @@
 //
-//  CALayer+BAAnimation.h
-//  BAQMUIDemo
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/5/28.
-//  Copyright © 2017年 boaihome. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface CALayer (BAAnimation)
+@interface CALayer (DZAnimation)
 
 /**
  摇晃动画：用于错误提示

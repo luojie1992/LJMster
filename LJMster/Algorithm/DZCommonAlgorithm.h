@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DZCommonAlgorithm : NSObject
 
+- (void)fastSortWithWithArray:(NSMutableArray *)array leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex ;
 @end
 
 NS_ASSUME_NONNULL_END

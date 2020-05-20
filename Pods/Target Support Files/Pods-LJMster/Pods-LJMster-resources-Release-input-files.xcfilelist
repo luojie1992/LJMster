@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-LJMster/Pods-LJMster-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/BAAlert/BAAlert.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/BAPickView/BAPickView.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle
+${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle
+${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle
+${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle
+${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js
+${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js
+${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js
+${PODS_ROOT}/WeexSDK/pre-build/weex-rax-api.js
+${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png
+${PODS_ROOT}/YYDebugDatabase/DebugDatabase/Web.bundle

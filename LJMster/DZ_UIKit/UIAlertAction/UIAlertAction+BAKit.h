@@ -1,16 +1,15 @@
 //
-//  UIAlertAction+BAKit.h
-//  BAKit
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/7/19.
-//  Copyright © 2017年 boai. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 
-typedef void (^BAKit_AlertActionBlock)(UIAlertAction *action);
+typedef void (^DZKit_AlertActionBlock)(UIAlertAction *action);
 
-@interface UIAlertAction (BAKit)
+@interface UIAlertAction (DZKit)
 
 /**
  UIAlertAction：Default 样式
@@ -19,8 +18,8 @@ typedef void (^BAKit_AlertActionBlock)(UIAlertAction *action);
  @param actionBlock actionBlock description
  @return UIAlertAction
  */
-+ (instancetype)ba_alertActionDefaultStyleActionWithTitle:(NSString *)title
-                                              actionBlock:(BAKit_AlertActionBlock)actionBlock;
++ (instancetype)DZ_alertActionDefaultStyleActionWithTitle:(NSString *)title
+                                              actionBlock:(DZKit_AlertActionBlock)actionBlock;
 
 /**
  UIAlertAction：Cancel 样式
@@ -29,8 +28,8 @@ typedef void (^BAKit_AlertActionBlock)(UIAlertAction *action);
  @param actionBlock actionBlock description
  @return UIAlertAction
  */
-+ (instancetype)ba_alertActionCancleStyleWithTitle:(NSString *)title
-                                       actionBlock:(BAKit_AlertActionBlock)actionBlock;
++ (instancetype)DZ_alertActionCancleStyleWithTitle:(NSString *)title
+                                       actionBlock:(DZKit_AlertActionBlock)actionBlock;
 
 /**
  UIAlertAction：Destructive 样式
@@ -39,22 +38,22 @@ typedef void (^BAKit_AlertActionBlock)(UIAlertAction *action);
  @param actionBlock actionBlock description
  @return UIAlertAction
  */
-+ (instancetype)ba_alertActionDestructiveStyleWithTitle:(NSString *)title
-                                            actionBlock:(BAKit_AlertActionBlock)actionBlock;
++ (instancetype)DZ_alertActionDestructiveStyleWithTitle:(NSString *)title
+                                            actionBlock:(DZKit_AlertActionBlock)actionBlock;
 
 @end
 
 CG_INLINE UIAlertAction *
-ba_alertActionDefault(NSString *title, BAKit_AlertActionBlock actionBlock){
-    return [UIAlertAction ba_alertActionDefaultStyleActionWithTitle:title actionBlock:actionBlock];
+ba_alertActionDefault(NSString *title, DZKit_AlertActionBlock actionBlock){
+    return [UIAlertAction DZ_alertActionDefaultStyleActionWithTitle:title actionBlock:actionBlock];
 }
 
 CG_INLINE UIAlertAction *
-ba_alertActionCancle(NSString *title, BAKit_AlertActionBlock actionBlock){
-    return [UIAlertAction ba_alertActionCancleStyleWithTitle:title actionBlock:actionBlock];
+ba_alertActionCancle(NSString *title, DZKit_AlertActionBlock actionBlock){
+    return [UIAlertAction DZ_alertActionCancleStyleWithTitle:title actionBlock:actionBlock];
 }
 
 CG_INLINE UIAlertAction *
-ba_alertActionDestructive(NSString *title, BAKit_AlertActionBlock actionBlock){
-    return [UIAlertAction ba_alertActionDestructiveStyleWithTitle:title actionBlock:actionBlock];
+ba_alertActionDestructive(NSString *title, DZKit_AlertActionBlock actionBlock){
+    return [UIAlertAction DZ_alertActionDestructiveStyleWithTitle:title actionBlock:actionBlock];
 }

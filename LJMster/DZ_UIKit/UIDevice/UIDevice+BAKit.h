@@ -1,9 +1,9 @@
 //
-//  UIDevice+BAKit.h
-//  BAQMUIDemo
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by 博爱 on 2017/2/13.
-//  Copyright © 2017年 boaihome. All rights reserved.
+//  Created by jiejie on 2016/2/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,13 +15,13 @@
  *
  *  @param orientation 屏幕方向
  */
-+ (void)ba_deviceInterfaceOrientation:(UIInterfaceOrientation)orientation;
++ (void)DZ_deviceInterfaceOrientation:(UIInterfaceOrientation)orientation;
 
 /**
  监测设备是否越狱
 
  @return YES/NO;
  */
-- (BOOL)ba_deviceIsJailBreak;
+- (BOOL)DZ_deviceIsJailBreak;
 
 @end

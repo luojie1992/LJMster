@@ -1,4 +1,8 @@
 #import "SceneDelegate.h"
+#ifdef DEBUG
+#import <DoraemonKit/DoraemonManager.h>
+#endif
+
 
 @interface SceneDelegate ()
 
@@ -8,6 +12,13 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+    
+#ifdef DEBUG
+    //默认
+    // [[DoraemonManager shareInstance] install];
+    // 或者使用传入位置,解决遮挡关键区域,减少频繁移动
+  //  [[DoraemonManager shareInstance] installWithStartingPosition:CGPointMake(300, 66)];
+#endif
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
@@ -23,6 +34,7 @@
 
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
+
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
 }

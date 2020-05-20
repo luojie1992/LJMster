@@ -9,5 +9,17 @@
 #ifndef DZ_StructDefine_h
 #define DZ_StructDefine_h
 
+struct dz_blockLayout {
+    void *isa ;
+    int flags ;
+    int reserved;
+    void (*inovke)(void *,...);
+    struct block_descriptor{
+        unsigend long int reserved ;
+        unsigend long int size ;
+        void (*copy)(void *dst ,void *src) ;
+        const char *signature;
+    } *descriptor ;
+};
 
 #endif /* DZ_StructDefine_h */

@@ -1,0 +1,1 @@
+../../../AppTrace/AppTrace/Classes/AppTraceImpl.h

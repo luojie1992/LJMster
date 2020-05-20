@@ -1,16 +1,16 @@
 //
-//  CALayer+BAAnimation.m
-//  BAQMUIDemo
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/5/28.
-//  Copyright © 2017年 boaihome. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import "CALayer+BAAnimation.h"
 
 static NSString * const kAnimationKey_shake = @"kAnimationKey_shake";
 
-@implementation CALayer (BAAnimation)
+@implementation CALayer (DZAnimation)
 
 /**
  摇晃动画：用于错误提示

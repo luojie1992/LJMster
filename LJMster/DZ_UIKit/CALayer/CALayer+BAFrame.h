@@ -1,14 +1,14 @@
 //
-//  CALayer+BAFrame.h
-//  BAKit
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/7/19.
-//  Copyright © 2017年 boai. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface CALayer (BAFrame)
+@interface CALayer (DZFrame)
 
 // Frame
 @property (nonatomic) CGPoint viewOrigin;

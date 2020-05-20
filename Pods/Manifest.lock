@@ -1,0 +1,202 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AppTrace (0.1.1):
+    - fishhook
+  - BAAlert (1.2.7)
+  - BAButton (2.6.8)
+  - BANetManager (2.3.10):
+    - AFNetworking
+    - YYCache
+  - BAPickView (1.1.9)
+  - BATextView (1.0.5)
+  - BATouchID (1.0.1)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - DoraemonKit/Core (3.0.0)
+  - DoraemonKit/WithDatabase (3.0.0):
+    - DoraemonKit/Core
+    - YYDebugDatabase
+  - DoraemonKit/WithGPS (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLoad (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLogger (3.0.0):
+    - CocoaLumberjack
+    - DoraemonKit/Core
+  - DoraemonKit/WithMLeaksFinder (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithWeex (3.0.0):
+    - DoraemonKit/Core
+    - WeexSDK
+    - WXDevtool
+  - fishhook (0.2)
+  - FLEX (3.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - IQKeyboardManager (6.5.5)
+  - JMRoundedCorner (1.2.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.3.1)
+  - MyLayout (1.9.1)
+  - NullSafe (2.0)
+  - ReactiveObjC (3.1.1)
+  - SDAutoLayout (2.2.1)
+  - SocketRocket (0.5.1)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/AlipayShare (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+  - WeexSDK (0.26.0)
+  - WXDevtool (0.24.0):
+    - SocketRocket
+    - WeexSDK
+  - YYCache (1.0.4)
+  - YYDebugDatabase (2.0.8):
+    - FMDB
+    - GCDWebServer
+
+DEPENDENCIES:
+  - AFNetworking
+  - AppTrace
+  - BAAlert
+  - BAButton
+  - BANetManager
+  - BAPickView
+  - BATextView
+  - BATouchID
+  - DoraemonKit/Core (~> 3.0.0)
+  - DoraemonKit/WithDatabase (~> 3.0.0)
+  - DoraemonKit/WithGPS (~> 3.0.0)
+  - DoraemonKit/WithLoad (~> 3.0.0)
+  - DoraemonKit/WithLogger (~> 3.0.0)
+  - DoraemonKit/WithMLeaksFinder (= 3.0.0)
+  - DoraemonKit/WithWeex (~> 3.0.0)
+  - FLEX
+  - FMDB
+  - IQKeyboardManager
+  - JMRoundedCorner
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - MyLayout
+  - NullSafe
+  - ReactiveObjC
+  - SDAutoLayout
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/AlipayShare
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AppTrace
+    - BAAlert
+    - BAButton
+    - BANetManager
+    - BAPickView
+    - BATextView
+    - BATouchID
+    - CocoaLumberjack
+    - DoraemonKit
+    - fishhook
+    - FLEX
+    - FMDB
+    - GCDWebServer
+    - IQKeyboardManager
+    - JMRoundedCorner
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - MyLayout
+    - NullSafe
+    - ReactiveObjC
+    - SDAutoLayout
+    - SocketRocket
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - WeexSDK
+    - WXDevtool
+    - YYCache
+    - YYDebugDatabase
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AppTrace: 2ab5647443c271696b298aee3f71e6d367662ed4
+  BAAlert: 2f1bbace38f437628e452941ee254ecc46000844
+  BAButton: 3b5ee26b0ba48742e575d6c46d1d2f4ba4ebd843
+  BANetManager: b64cf57ee32b0d576f8bd3dd6745d86d1a1e43f2
+  BAPickView: cebe512092193e6ab131c108227d3faa97462f5c
+  BATextView: cefd9424cd69a66e2b3e158d1f742cec1201feb7
+  BATouchID: 33732f62f7d656733a3208c94744c61806095d3c
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  DoraemonKit: 4ad75a74374d836425e947f0f891157cacfdcf46
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JMRoundedCorner: 214e56c2a7e3a0916e8d6040c66d85519cc1be87
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MyLayout: 6e44860ef5a857cf50178c68e01099c0926cd7c7
+  NullSafe: 948feba938f03abede5ed3758694a9fe5b3a65ce
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  WeexSDK: 55b67d1c411eb28ec1e356f763a335d0ddcc5324
+  WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYDebugDatabase: 037486297a7dd40bc50e2c6df5de7b4ad24c9c17
+
+PODFILE CHECKSUM: c9b44ab1d251478290f206f256d77c5f42113c42
+
+COCOAPODS: 1.8.4

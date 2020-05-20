@@ -6,14 +6,14 @@
 //  Copyright © 2020 jiejie. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
-
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (model)
+
++ (instancetype)modelWithDict:(NSDictionary *)dict;
++ (instancetype)modelWithDict:(NSDictionary *)dict updateDict:(NSDictionary *)updateDict;
 
 @end
 

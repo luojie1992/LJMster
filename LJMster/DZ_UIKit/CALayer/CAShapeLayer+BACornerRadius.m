@@ -1,14 +1,13 @@
 //
-//  CAShapeLayer+BACornerRadius.m
-//  BAKit
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/7/19.
-//  Copyright © 2017年 boai. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
-
 #import "CAShapeLayer+BACornerRadius.h"
 
-@implementation CAShapeLayer (BACornerRadius)
+@implementation CAShapeLayer (DZCornerRadius)
 
 /**
  CAShapeLayer：创建一个带不同圆角的 labyer
@@ -18,7 +17,7 @@
  @param radius radius description
  @return CAShapeLayer
  */
-+ (CAShapeLayer *)ba_shapLayerWithFrame:(CGRect)frame
++ (CAShapeLayer *)DZ_shapLayerWithFrame:(CGRect)frame
                                 corners:(UIRectCorner)corners
                                  radius:(CGFloat)radius
 {

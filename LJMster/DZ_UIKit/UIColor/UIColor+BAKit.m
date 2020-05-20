@@ -1,9 +1,9 @@
 //
-//  UIColor+BAKit.m
-//  BAKit
+//  DZ_UIKit.h
+//  LJMster
 //
-//  Created by boai on 2017/6/7.
-//  Copyright © 2017年 boai. All rights reserved.
+//  Created by jiejie on 2017/4/3.
+//  Copyright © 2017 jiejie. All rights reserved.
 //
 
 #import "UIColor+BAKit.h"
@@ -18,7 +18,7 @@
  @param alpha alpha
  @return 颜色
  */
-+ (UIColor *)ba_colorWithHex:(NSString *)hexstring andAlpha:(CGFloat)alpha
++ (UIColor *)DZ_colorWithHex:(NSString *)hexstring andAlpha:(CGFloat)alpha
 {
     if (hexstring.length == 0)
     {
